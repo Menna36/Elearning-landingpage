@@ -3,12 +3,27 @@ button {
     font-family: "Plus Jakarta Sans";
 }
 
-header,
-footer {
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 36px 16px;
+    margin: 0 auto;
+    max-width: 1110px;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    padding: 36px 16px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #13183f;
 }
 
 header .header-img {
@@ -67,6 +82,8 @@ h2 {
 
 #hero {
     padding: 0 16px;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 
 #hero-button {
@@ -95,10 +112,9 @@ h2 {
 }
 
 #hero-right {
-    overflow: hidden;
+    overflow: visible;
     justify-content: center;
     display: flex;
-    padding-top: 46px;
 }
 
 .general-text {
@@ -136,15 +152,19 @@ footer .footer-button:hover {
         linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
 }
 
-.grid-layout {
+.grid-background {
     background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+.grid-layout {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 16px;
     gap: 50px;
-    justify-content: center;
     padding-top: 66px;
     padding-bottom: 80px;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 
 .grid-container {
@@ -168,10 +188,6 @@ footer .footer-button:hover {
     background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
     color: #fff;
     height: auto;
-}
-
-footer {
-    background-color: #13183f;
 }
 
 /* tablet */
@@ -198,13 +214,11 @@ footer {
     #hero {
         display: flex;
         align-items: center;
-        padding: 0 0 0 39px;
     }
 
     #hero-right {
         display: block;
         margin-top: -255px;
-        margin-left: -10px;
     }
 
     #hero-left {
@@ -269,10 +283,6 @@ footer {
         padding-top: 64px;
     }
 
-    #hero {
-        padding: 0 0 0 165px;
-    }
-
     #hero-title {
         padding-bottom: 29px;
     }
@@ -281,12 +291,8 @@ footer {
         padding-bottom: 40px;
     }
 
-    #hero-left {
-        padding-right: 162px;
-    }
-
     #hero-right {
-        padding-left: 160px;
+        padding-left: 100px;
     }
 
     .general-text {
